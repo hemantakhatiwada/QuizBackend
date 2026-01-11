@@ -19,13 +19,23 @@ public class Questions {
 
     }
 
-    public Questions(String questions, String optionA, String optionB, String optionC, String optionD, String correctoption) {
+    public Questions(Long id,String questions, String optionA, String optionB, String optionC, String optionD, String correctoption) {
+       this.id=id;
         this.questions = questions;
+
         this.optionA = optionA;
         this.optionB = optionB;
         this.optionC = optionC;
         this.optionD = optionD;
         this.correctoption = correctoption;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getQuestions() {
