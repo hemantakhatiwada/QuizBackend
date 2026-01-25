@@ -7,6 +7,7 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
+RUN chmod +x mvnw          # <-- Add this line
 RUN ./mvnw -q -DskipTests package
 
 EXPOSE 8080
